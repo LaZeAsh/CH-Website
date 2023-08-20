@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #4b4646;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2395D6;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #E2843F;
+}
+
+.hero {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #E2843F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #87619E;
+}
+
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#sponsors {
+    background-color: #87B837;
+}
+
+.sponsor-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#team {
+    background-color: #87619E;
+}
+
+#schedule {
+    background-color: #E2843F;
+}
+
+#faq {
+    background-color: #4b4646;
+    color: white;
+}
+
+.team-grid, .faq-item, .schedule-item {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer {
+    background-color: #4b4646;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .team-grid, .faq-item, .schedule-item {
+        flex-direction: column;
+    }
+}
